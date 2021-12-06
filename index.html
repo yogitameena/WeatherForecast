@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="HandheldFriendly" content="true">
+    <title>Weather Forecast</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="https://cdn-icons.flaticon.com/png/128/5828/premium/5828361.png?token=exp=1638774111~hmac=7ba2df2df6c9cc2a626d2554d881a9fe">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Asap&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body style="background-color:#DDDDD">
+
+      <center>
+      <div class="clearfix">
+        <div class="box1" style="background-color:#5C7AEA">
+          <ul class="nav" id="dropdownClick">
+
+
+            <p><img class="imgs" src="https://cdn-icons.flaticon.com/png/128/2847/premium/2847328.png?token=exp=1638592725~hmac=da87f9e94812e3f23c71cf5767adecdf" style="margin-right: 10px;"><h4 style="color:white; font-size:20px;">METEOROLOG </h4></p><hr class="lining">
+
+            <li><a class="contents" href="#dashboard" style="font-size:17px;margin-top:28px;"><img src="https://pics.freeicons.io/uploads/icons/png/5502906191600002644-64.png" style="width:30px;height:30px;">&nbsp;&nbsp;Dashboard </a> </li><br>
+            <li><a class="contents" href="#statistics" style="font-size:17px;"><img src="https://cdn-icons-png.flaticon.com/128/900/900772.png" style="width:30px;height:30px;">&nbsp;&nbsp;Statistics</a></li><br>
+            <li><a class="contents" href="#map" style="font-size:17px;"><img src="https://cdn-icons-png.flaticon.com/128/2928/2928989.png" style="width:30px;height:30px;">&nbsp;&nbsp;Map</a></li><br>
+            <li><a class="contents" href="#calendar" style="font-size:17px;"><img src="https://cdn-icons.flaticon.com/png/128/2975/premium/2975267.png?token=exp=1638592506~hmac=b26e8ca2479f0960f69b557831c319e9" style="width:30px;height:30px;">&nbsp;&nbsp;Calendar</a></li><br>
+            <li><a class="contents" href="#settings" style="font-size:17px;"><img src="https://cdn-icons-png.flaticon.com/128/503/503822.png" style="width:30px;height:30px;">&nbsp;&nbsp;Settings</a></li><br><br><br><br><br><br><br>
+<br>
+<br>
+<br>
+<div class="gallerysmall">
+  <div style="color:white">weather</div>
+<div class="today"><img src="https://cdn-icons.flaticon.com/png/128/1291/premium/1291594.png?token=exp=1638636489~hmac=d024eb203d0501525a3193ba692f1c06" style="width:25px;height:25px;"><b>Today</b><span></span></div>
+
+    <b class="timing"><span style="font-size:12px float:left">11:44</span></b><br>
+    <p class="day"><span style="font-size:12px">Mon,11 January</span></p><br><br>
+  <h1 class="temperature">+4°C<span style="color:black;"></span></h1>
+  <h4 class="city"><b><p>New York<span style="color:black;"></span></p></b></h4>
+  <p><small><h6>United States<span style="color:black;font-size:0.875em"></span></h6></small></p>
+  <div class="humidity">Humidity:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>70%</b><span style="color:black;font-size:0.875em"></span></div>
+  <label for="customRange1" class="form-label"></label>
+<input type="range" class="form-range" id="customRange1">
+<div class="precipitation">Precipitation:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>25%</b><span style="color:black;font-size:0.875em"></span></div>
+<label for="customRange1" class="form-label"></label>
+<input type="range" class="form-range" id="customRange1">
+
+<div class="wind">Wind:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://cdn-icons.flaticon.com/png/128/2812/premium/2812998.png?token=exp=1638642423~hmac=a2812734f2e5a18a45b544812d6d0a5e" style="width:25px;height:25px;">&nbsp;&nbsp;<b>&nbsp;&nbsp;&nbsp;4.5km/hr</b><span style="color:black;font-size:0.875em"></span></div>
+</div>
+
+        </ul>
+</nav>
+
+
+
+
+        </div>
+        <div class="box2" style="background-color:white">
+  <span style="color:white">weather</span>
+            <nav class="navbar navbar-expand-lg">
+
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                  <div class="navbar-nav">
+                   <h6> <a class="nav-item nav-link" href="#" style="float:left;margin-left:10px;" ><img class="navimg" src="search.png" alt="search-icon"></a></h6>
+                <h6><a class="nav-item nav-link" href="#"style="margin-right:400px;margin-top:6px;color:#AAAAAA;font-size:12px;" >Search</a></h6>
+                    </div>
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav1">
+                    <a class="nav-item nav-link" href="#" ><img src="https://cdn-icons-png.flaticon.com/128/1827/1827347.png" style="width:20px;height:20px;margin-left:-55px;" >&nbsp;&nbsp;&nbsp;<img class="navimg" src="https://cdn-icons-png.flaticon.com/128/2922/2922506.png">&nbsp<p class="user-name" style="color:#687980">William Jacobson</p>&nbsp;<img src="https://cdn-icons.flaticon.com/png/128/2985/premium/2985150.png?token=exp=1638769473~hmac=5aaa595d0e16d81b0a64ae10fc0cf188" style="width:20px;height:20px;margin-right:-55px;"></a>
+                  </div>
+                </div>
+              </nav>
+
+              <div class="gallerylocation">
+                <span style="float:left;margin-left:19px;"><h4 style="color:#343A40;font-size:21px;font-weight:bold;">Weather Forecast</h4></span>
+                <h4 style="color:white">weather</h4>
+                  <img class="location" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8216-hlO7b_u3AhuH8xvaOtYnY_HPIM8HrQ&usqp=CAU" >
+<div class="amsterdam">12:31 <img class="location-icon" src="https://cdn-icons-png.flaticon.com/128/2698/2698194.png" ></div>
+<div class="amsterdam-label">Amsterdam</div>
+              </div>
+
+              <div class="gallerylocation">
+                <img class="location" src="https://pytrip.ru/wp-content/uploads/2014/10/IMG_2048.jpg">
+<div class="london">16:44 <img class="location-icon" src="https://cdn-icons-png.flaticon.com/128/2698/2698194.png" ></div>
+<div class="london-label">London</div>
+              </div>
+
+              <div class="gallerylocation">
+                      <img class="location" src="https://lp-cms-production.imgix.net/2020-10/GettyImages-1191829167.jpg?auto=compress&fit=crop&fm=auto&sharp=10&vib=20&w=1200&h=800">
+<div class="budapest">21:30 <img class="location-icon" src="https://cdn-icons.flaticon.com/png/128/1812/premium/1812660.png?token=exp=1638714556~hmac=bd1d4e8371e5e1b8d7f6ebb946e5566a"</div>
+              </div><div class="budapest-label">Budapest</div>
+
+              <div class="gallerylocation">
+                <img class="location" src="https://media.istockphoto.com/photos/paris-cityscape-picture-id638419754?k=20&m=638419754&s=170667a&w=0&h=DYUT1tEp-f1v4AhYpQXNxcVq-PZNxN4SODoXXaCjG9k=">
+<div class="paris">16:12 <img class="location-icon" src="https://cdn-icons-png.flaticon.com/128/2698/2698194.png" ></div>
+<div class="paris-label">Paris</div>
+              </div>
+
+              <div class="gallerylocation">
+                <img class="location" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBw7u5Z7jOuLJbtb_3t6eAulddDcPpVBhe3g&usqp=CAU" >
+<div class="chicago">22:15 <img class="location-icon" src="https://cdn-icons.flaticon.com/png/128/1812/premium/1812660.png?token=exp=1638714556~hmac=bd1d4e8371e5e1b8d7f6ebb946e5566a"</div>
+              </div><div class="chicago-label">Chicago</div>
+
+<br><br><br><br><br><br><br>
+
+
+                  <p style="float:left;margin-top:10px;margin-left:19px;color:#343A40;font-weight: bold;font-size:22px;">London</p>
+<br><br><br>
+<p style="color:#5C7AEA;font-size: 14px;float:right;margin-top:-55px;margin-right:19px;">Details more &nbsp<img src="arrow.png" style="width:18px;height:18px;"</p>
+<div class="row">
+  <div class="col-sm-1">
+    <div class="card">
+      <div class="card-body">
+        <img class="navimg" src="https://cdn-icons-png.flaticon.com/128/1322/1322927.png">
+        <br>
+        <b><p class="base">-5/+4</p></b>
+        <h6><span style="font-size:15px;">11 Mon</span></h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-1">
+    <div class="card">
+      <div class="card-body">
+        <img class="navimg" src="https://cdn-icons-png.flaticon.com/128/1322/1322927.png">
+        <br>
+        <b><p class="base">-5/+4</p></b>
+        <h6><span>12 Tue</span></h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-1">
+    <div class="card">
+      <div class="card-body">
+        <img class="navimg" src="https://cdn-icons-png.flaticon.com/128/890/890347.png">
+        <br>
+        <b><p class="base">-5/+4</p></b>
+        <h6><span style="font-size:14px;">13 Wed</span></h6>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="col-sm-1">
+    <div class="card">
+      <div class="card-body">
+        <img class="navimg" src="https://cdn-icons.flaticon.com/png/128/2435/premium/2435721.png?token=exp=1638770983~hmac=078c57dd96d8e9c96db08c42cff853ca">
+        <br>
+          <b><p class="base">-5/+4</p></b>
+          <h6><span>14 Thu</span></h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-1">
+    <div class="card">
+      <div class="card-body">
+        <img class="navimg" src="https://cdn-icons-png.flaticon.com/128/890/890347.png">
+        <br>
+          <b><p class="base">-5/+4</p></b>
+          <h6><span>15 Fri</span></h6>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-1">
+      <div class="card">
+        <div class="card-body">
+          <img class="navimg" src="https://cdn-icons-png.flaticon.com/128/1322/1322927.png">
+          <br>
+            <b><p class="base">-5/+4</p></b>
+            <h6><span>16 Sat</span></h6>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-1">
+      <div class="card">
+        <div class="card-body">
+          <img class="navimg" src="https://cdn-icons-png.flaticon.com/128/890/890347.png">
+          <br>
+            <b><p class="base">-5/+4</p></b>
+            <h6><span>17 Sun</span></h6>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-1">
+      <div class="card">
+        <div class="card-body">
+            <img class="navimg" src="https://cdn-icons-png.flaticon.com/128/1322/1322927.png">
+            <br>
+            <b><p class="base">-5/+4</p></b>
+            <h6><span style="font-size:14px;">18 Mon</span></h6>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-1">
+        <div class="card">
+          <div class="card-body">
+            <img class="navimg" src="https://cdn-icons-png.flaticon.com/128/1322/1322927.png">
+            <br>
+            <b><p class="base">-5/+4</p></b>
+            <h6><span>19 Tue</span></h6>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-1">
+        <div class="card">
+              <img src="overlap.png">
+          </div>
+        </div>
+
+<br><br>
+<p style="color:white;font-size:1px;">weather</p>
+
+</div>
+
+        <h5><span><p style="color: #343A40;float:left;margin-top:20px;margin-left:10px;font-weight: bold;margin-left:19px;">Weather Graph</p></span></h5>
+<p><img src="Chart.jpg" style="width:990px;height:370px;float:left;"><b><span></span></b></p><br>
+  </div>
+
+
+
+      </div>
+    </center>
+
+
+
+</body>
+</html>
